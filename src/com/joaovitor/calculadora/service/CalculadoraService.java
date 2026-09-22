@@ -11,6 +11,9 @@ public class CalculadoraService {
   }
 
   public double division(double firstNumber, double secondNumber) {
+    if (secondNumber == 0) {
+      throw new IllegalArgumentException("Impossível dividir por zero !!");
+    }
     return firstNumber / secondNumber;
   }
 
